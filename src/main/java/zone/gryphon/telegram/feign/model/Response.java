@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Value;
 
-import java.util.List;
-
 /**
  * @author galen
  */
@@ -16,6 +14,6 @@ public class Response<T> {
 
     private final boolean ok;
 
-    private List<T> result;
+    private T result;
 
 }
