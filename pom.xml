@@ -59,4 +59,26 @@
     <properties>
         <base-pom.version>0.11.12-99d4bbd</base-pom.version>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>analyze-dependencies</id>
+                        <configuration>
+                            <ignoredUnusedDeclaredDependencies>
+                                <dependency>ch.qos.logback:logback-classic:jar:*</dependency>
+                                <dependency>ch.qos.logback:logback-core:jar:*</dependency>
+                                <dependency>org.projectlombok:lombok:jar:*</dependency>
+                            </ignoredUnusedDeclaredDependencies>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
