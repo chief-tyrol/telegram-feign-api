@@ -37,7 +37,7 @@ public class SendMessageRequest {
     private final Long chatId;
 
     /**
-     *  Text of the message to be sent
+     * Text of the message to be sent
      */
     @NonNull
     private final String text;

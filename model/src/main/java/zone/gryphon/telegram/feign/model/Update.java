@@ -43,14 +43,14 @@ public class Update {
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * New incoming message of any kind — text, photo, sticker, etc.
      */
     private final Message message;
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * New version of a message that is known to the bot and was edited
      */
     @JsonProperty("edited_message")
@@ -58,7 +58,7 @@ public class Update {
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * New incoming channel post of any kind — text, photo, sticker, etc.
      */
     @JsonProperty("channel_post")
@@ -66,7 +66,7 @@ public class Update {
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * New version of a channel post that is known to the bot and was edited
      */
     @JsonProperty("edited_channel_post")
@@ -74,7 +74,7 @@ public class Update {
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * New incoming
      * <a href="https://core.telegram.org/bots/api#inline-mode">inline</a>
      * query
@@ -84,7 +84,7 @@ public class Update {
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * The result of an
      * <a href="https://core.telegram.org/bots/api#inline-mode">inline</a>
      * query that was chosen by a user and sent to their chat partner.
@@ -97,7 +97,7 @@ public class Update {
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * New incoming callback query
      */
     @JsonProperty("callback_query")
@@ -105,7 +105,7 @@ public class Update {
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * New incoming shipping query. Only for invoices with flexible price
      */
     @JsonProperty("shipping_query")
@@ -113,7 +113,7 @@ public class Update {
 
     /**
      * <i>Optional.</i>
-     *
+     * <p>
      * New incoming pre-checkout query.
      * Contains full information about checkout
      */

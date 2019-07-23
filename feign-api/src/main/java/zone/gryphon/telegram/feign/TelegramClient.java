@@ -36,6 +36,7 @@ public interface TelegramClient {
      * A simple method for testing your bot's auth token.
      * Requires no parameters.
      * Returns basic information about the bot in form of a User object.
+     *
      * @return
      */
     @RequestLine("GET /bot{token}/getMe")
@@ -47,7 +48,6 @@ public interface TelegramClient {
     @Headers("Content-Type: application/json")
     @RequestLine("POST /bot{token}/sendMessage")
     Response<Message> sendMessage(SendMessageRequest sendMessageRequest);
-
 
 
 }
