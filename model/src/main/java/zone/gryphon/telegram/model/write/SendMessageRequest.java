@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package zone.gryphon.telegram.feign.model.write;
+package zone.gryphon.telegram.model.write;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

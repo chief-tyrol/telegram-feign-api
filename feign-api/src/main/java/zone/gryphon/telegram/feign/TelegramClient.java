@@ -18,11 +18,11 @@ package zone.gryphon.telegram.feign;
 import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
-import zone.gryphon.telegram.feign.model.Message;
-import zone.gryphon.telegram.feign.model.Response;
-import zone.gryphon.telegram.feign.model.Update;
-import zone.gryphon.telegram.feign.model.User;
-import zone.gryphon.telegram.feign.model.write.SendMessageRequest;
+import zone.gryphon.telegram.model.Message;
+import zone.gryphon.telegram.model.Response;
+import zone.gryphon.telegram.model.Update;
+import zone.gryphon.telegram.model.User;
+import zone.gryphon.telegram.model.write.SendMessageRequest;
 
 import java.util.List;
 

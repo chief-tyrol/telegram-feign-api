@@ -13,40 +13,62 @@
  * limitations under the License.
  */
 
-package zone.gryphon.telegram.feign.model;
+package zone.gryphon.telegram.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.NonNull;
 import lombok.Value;
 
+import java.util.List;
+
 /**
- * This object represents a chat photo.
- *
- * <a href="https://core.telegram.org/bots/api#chatphoto">https://core.telegram.org/bots/api#chatphoto</a>
+ * This object represents a message.
  *
  * @author galen
  */
 @Value
 @Builder(toBuilder = true)
 @AllArgsConstructor
-public class ChatPhoto {
+public class Message {
 
-    /**
-     * Unique file identifier of small (160x160) chat photo.
-     * This file_id can be used only for photo download.
-     */
-    @NonNull
-    @JsonProperty("small_file_id")
-    private final String smallFileId;
+    @JsonProperty("message_id")
+    private Long messageId;
 
-    /**
-     * Unique file identifier of big (640x640) chat photo.
-     * This file_id can be used only for photo download.
-     */
-    @NonNull
-    @JsonProperty("big_file_id")
-    private final String bigFileId;
+    private User from;
+
+    private Long date;
+
+    private Chat chat;
+
+    @JsonProperty("forward_from")
+    private User forwardFrom;
+
+    private Chat forwardFromChat;
+
+    private Long forwardFromMessageId;
+
+    private String forwardSignature;
+
+    private Long forwardDate;
+
+    private Message replyToMessage;
+
+    private Long editDate;
+
+    private String authorSignature;
+
+    private String text;
+
+    private List<MessageEntity> entities;
+
+    private List<MessageEntity> captionEntities;
+
+    private Audio audio;
+
+    private Document document;
+
+    // TODO
+
 
 }

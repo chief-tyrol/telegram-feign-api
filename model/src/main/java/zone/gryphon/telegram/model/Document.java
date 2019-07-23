@@ -13,10 +13,10 @@
  * limitations under the License.
  */
 
-package zone.gryphon.telegram.feign.model;
+package zone.gryphon.telegram.model;
 
 /**
  * @author galen
  */
-public class ShippingQuery {
+public class Document {
 }

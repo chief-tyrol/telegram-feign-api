@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package zone.gryphon.telegram.feign.model;
+package zone.gryphon.telegram.model;
 
 /**
  * @author galen

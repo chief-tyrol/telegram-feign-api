@@ -13,10 +13,22 @@
  * limitations under the License.
  */
 
-package zone.gryphon.telegram.feign.model;
+package zone.gryphon.telegram.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Value;
 
 /**
  * @author galen
  */
-public class PreCheckoutQuery {
+@Value
+@Builder(toBuilder = true)
+@AllArgsConstructor
+public class Response<T> {
+
+    private final boolean ok;
+
+    private T result;
+
 }
