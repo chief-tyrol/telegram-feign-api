@@ -19,8 +19,7 @@
     <parent>
         <groupId>zone.gryphon</groupId>
         <artifactId>base-pom</artifactId>
-        <!-- when updating parent, also update version in properties section -->
-        <version>0.11.12-99d4bbd</version>
+        <version>0.11.23-1b57a25</version>
     </parent>
 
     <groupId>zone.gryphon.telegram</groupId>
@@ -54,10 +53,6 @@
         <module>feign-api</module>
         <module>model</module>
     </modules>
-
-    <properties>
-        <base-pom.version>0.11.12-99d4bbd</base-pom.version>
-    </properties>
 
     <build>
         <plugins>
