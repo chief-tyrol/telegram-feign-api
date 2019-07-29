@@ -54,6 +54,13 @@
         <module>model</module>
     </modules>
 
+    <scm>
+        <connection>scm:git:git@github.com:chief-tyrol/telegram-java.git</connection>
+        <developerConnection>scm:git:git@github.com:chief-tyrol/telegram-java.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/chief-tyrol/telegram-java</url>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
